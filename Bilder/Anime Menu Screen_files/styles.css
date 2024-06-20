@@ -1,0 +1,248 @@
+:root {
+    --vh: 1vh;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #2D4643, #000000); /* Gradient background */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 2;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Make them circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.carousel .arrow img {
+    width: 70%;
+    height: 70%;
+}
+
+.carousel .arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel .arrow.left {
+    left: 10px;
+}
+
+.carousel .arrow.right {
+    right: 10px;
+}
+
+.carousel .slide {
+    width: 25%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .active {
+    opacity: 1 !important;
+    visibility: visible;
+}
+
+.carousel .hidden-left {
+    transform: translateX(-70%) scale(0.8); /* Adjusted spacing and scale */
+    z-index: 1;
+    opacity: 0.3; /* Increased transparency */
+    visibility: visible;
+}
+
+.carousel .hidden-right {
+    transform: translateX(70%) scale(0.8); /* Adjusted spacing and scale */
+    z-index: 1;
+    opacity: 0.3; /* Increased transparency */
+    visibility: visible;
+}
+
+.carousel .center {
+    transform: translateX(0) scale(1); /* Center slide with no extra scale */
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content .item {
+    width: 100%; /* Full width */
+    max-width: 100%;
+    height: auto; /* Adjust height */
+    background: rgba(136, 136, 136, 0.5); /* Transparent gray background */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.model-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh; /* Make it consistent with carousel height */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+model-viewer {
+    display: flex;
+    width: 100%;
+    height:60%;
+    object-fit: contain; /* Ensure the model fits within the container */
+}
+
+.toggle-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.content .text-box {
+    width: 80vw; /* Responsive width */
+    max-width: 600px; /* Max width for larger screens */
+    background: #444;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+
+.content .item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content .text {
+    margin: 5px;
+    background: #444;
+    padding: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.footer img {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 60vh;
+    }
+
+    .carousel .slide {
+        width: 70%; /* Center slide takes majority of the width */
+    }
+
+    .carousel .hidden-left,
+    .carousel .hidden-right {
+        display: none; /* Hide the side slides */
+    }
+
+    .content {
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .content .item {
+        width: 100%;
+        flex-direction: column;
+        height: 50%; /* Adjust height */
+    }
+
+    .model-container {
+        height: 70vh; /* Adjust height for mobile */
+    }
+    model-viewer {
+        display: flex;
+        width: 100%;
+        height:40%;
+        object-fit: contain; /* Ensure the model fits within the container */
+
+    .content .text-box {
+        width: 90vw; /* More responsive width for mobile */
+        max-width: none; /* Remove max width for mobile */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer img {
+        margin: 10px 0;
+    }
+}
+
+.blossom {
+    position: fixed;
+    top: -10vh;
+    background: url('Bilder/pixel-art-sakura-flower-icon-png.webp') no-repeat center center / contain;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .blossom {
+        display: none;
+    }
+}
+}

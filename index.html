@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Menu Screen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="carousel-container fullscreen">
+        <button class="arrow left" onclick="prevSlide()">
+            <img src="Bilder/arrow_left.png" alt="Left Arrow">
+        </button>
+        <div class="carousel">
+            <div class="slide" id="slide1"><img src="Bilder/Cartridge_full.png" alt="Anime 1"></div>
+            <div class="slide" id="slide2"><img src="Bilder/Cartridge_empty.png" alt="Anime 2"></div>
+            <div class="slide" id="slide3"><img src="Bilder/Cartridge_empty.png" alt="Anime 3"></div>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">
+            <img src="Bilder/arrow_right.png" alt="Right Arrow">
+        </button>
+    </div>
+    <div class="content">
+        <div class="visuals">
+            <div class="left-column">
+                <div class="model-viewer-container">
+                    <!-- Platzhalter für 3D-Modell -->
+                    <model-viewer src="Bilder/one_piece_logo.glb" alt="3D Model" auto-rotate camera-controls
+                    min-camera-orbit="auto auto 80%" max-camera-orbit="auto auto 80%"  camera-zoom="none"
+                    orbit-sensitivity="0.5" ></model-viewer>
+      
+                </div>
+            </div>
+            <div class="right-column">
+              
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cartridges-info cartridges">
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 1" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 2" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 3" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 4" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 5" class="overlapping-image">
+                </div>
+            </div>
+            <div class="cartridges-info cartridge-text">
+                <p>"One Piece" ist eine weltweit beliebte Anime- und Manga-Serie, die von Eiichiro Oda kreiert wurde. Sie debütierte als Manga im Jahr 1997 und als Anime im Jahr 1999. Die Serie folgt den Abenteuern von Monkey D. Ruffy, einem jungen Piraten mit dem Traum, der König der Piraten zu werden. Nach dem Verzehr der Gum-Gum-Frucht, einer der geheimnisvollen Teufelsfrüchte, erhält Ruffy die Fähigkeit, seinen Körper wie Gummi zu dehnen, was ihm auf seinen Abenteuern unglaubliche Vorteile und auch einige komische Nachteile beschert.
+
+                    Ruffys Reise ist das Herzstück von "One Piece". Sie führt ihn und seine vielfältige Crew, die Strohhut-Piraten, durch zahlreiche Inseln und Meere. Jedes Mitglied seiner Crew hat eigene tiefgründige Hintergrundgeschichten und Träume, die die Handlung bereichern. Dazu gehören der Schwertkämpfer Zoro, die Navigatorin Nami, der Scharfschütze Lysop, der Koch Sanji und viele andere charismatische Figuren.
+                    
+                    "One Piece" ist bekannt für seine fesselnde Mischung aus Humor, Action und Drama. Die Serie behandelt komplexe Themen wie Freundschaft, Abenteuer, Freiheit und die dunklen Seiten der Macht. Dabei erkundet sie verschiedene Kulturen und Gesellschaften, wobei jede Insel oder Region ihre eigenen Normen und Probleme aufweist, die oft kritische Kommentare zur realen Welt darstellen.
+                    
+                    Mit über 1000 Episoden und zählenden Kapiteln bleibt "One Piece" ein Phänomen in der Welt der Unterhaltung. Seine Beliebtheit ist durch seine tiefgreifende Charakterentwicklung, epische Schlachten und das ständige Versprechen von neuen Geheimnissen und Enthüllungen ungebrochen. Fans und Kritiker loben die Serie für ihre Kreativität und die Fähigkeit, nach so vielen Jahren immer noch frisch und spannend zu bleiben
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="visuals">
+            <div class="left-column">
+                <div class="model-viewer-container">
+                    <img src="Bilder/HH.png" alt="Bild 1">
+                </div>
+            </div>
+            <div class="right-column">
+              
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cartridges-info cartridges">
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 1" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 2" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 3" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 4" class="overlapping-image">
+                </div>
+                <div class="img-container">
+                    <img src="Bilder/Cartridge_empty.png" alt="Bild 5" class="overlapping-image">
+                </div>
+            </div>
+            <div class="cartridges-info cartridge-text">
+                <p>"One Piece" ist eine weltweit beliebte Anime- und Manga-Serie, die von Eiichiro Oda kreiert wurde. Sie debütierte als Manga im Jahr 1997 und als Anime im Jahr 1999. Die Serie folgt den Abenteuern von Monkey D. Ruffy, einem jungen Piraten mit dem Traum, der König der Piraten zu werden. Nach dem Verzehr der Gum-Gum-Frucht, einer der geheimnisvollen Teufelsfrüchte, erhält Ruffy die Fähigkeit, seinen Körper wie Gummi zu dehnen, was ihm auf seinen Abenteuern unglaubliche Vorteile und auch einige komische Nachteile beschert.
+
+                    Ruffys Reise ist das Herzstück von "One Piece". Sie führt ihn und seine vielfältige Crew, die Strohhut-Piraten, durch zahlreiche Inseln und Meere. Jedes Mitglied seiner Crew hat eigene tiefgründige Hintergrundgeschichten und Träume, die die Handlung bereichern. Dazu gehören der Schwertkämpfer Zoro, die Navigatorin Nami, der Scharfschütze Lysop, der Koch Sanji und viele andere charismatische Figuren.
+                    
+                    "One Piece" ist bekannt für seine fesselnde Mischung aus Humor, Action und Drama. Die Serie behandelt komplexe Themen wie Freundschaft, Abenteuer, Freiheit und die dunklen Seiten der Macht. Dabei erkundet sie verschiedene Kulturen und Gesellschaften, wobei jede Insel oder Region ihre eigenen Normen und Probleme aufweist, die oft kritische Kommentare zur realen Welt darstellen.
+                    
+                    Mit über 1000 Episoden und zählenden Kapiteln bleibt "One Piece" ein Phänomen in der Welt der Unterhaltung. Seine Beliebtheit ist durch seine tiefgreifende Charakterentwicklung, epische Schlachten und das ständige Versprechen von neuen Geheimnissen und Enthüllungen ungebrochen. Fans und Kritiker loben die Serie für ihre Kreativität und die Fähigkeit, nach so vielen Jahren immer noch frisch und spannend zu bleiben.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="imageTexts.js"></script> -->
+    <script src="scripts.js"></script>
+    <script src="cherryblossom.js"></script>
+</body>
+
+</html>
